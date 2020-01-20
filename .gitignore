@@ -32,6 +32,7 @@ build/
 .vscode/
 
 ### flask ###
-flask/bin/**
-flask/include/**
-flask/lib/**
+python/flask/.Python
+python/flask/bin/**
+python/flask/include/**
+python/flask/lib/**
