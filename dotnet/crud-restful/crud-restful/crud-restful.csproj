@@ -12,6 +12,5 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="sqlSugarCore" Version="5.0.0.11" />
-    <PackageReference Include="mySqlSugarCore" Version="3.5.4" />
   </ItemGroup>
 </Project>
