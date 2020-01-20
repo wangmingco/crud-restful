@@ -28,6 +28,11 @@ target/
 /.nb-gradle/
 build/
 
+### VS ###
+.vs/
+dotnet/crud-restful/crud-restful/bin
+dotnet/crud-restful/crud-restful/obj
+
 ### VS Code ###
 .vscode/
 
