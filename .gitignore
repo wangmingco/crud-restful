@@ -41,3 +41,6 @@ python/flask/.Python
 python/flask/bin/**
 python/flask/include/**
 python/flask/lib/**
+
+### node ###
+node/node_modules
