@@ -6,4 +6,12 @@
 * `kotlin` : 采用`springboot`和`mybatis`框架实现
 * `node`   : 采用`express`框架实现(未实现orm)
 * `python` : 采用`flask`和`pymysql`框架实现
-* `php`    : 采用`slim`和`Eloquent ORM`框架实现
+* `php`    : 采用`slim`和`medoo`框架实现
+* `rust`   : 采用`rocket`和`diesel`框架实现
+* `ruby`   : TODO
+* `scala`  : TODO
+* `clojure`: TODO
+* `erlang` : TODO
+* `elixir` : TODO
+* `cpp`    : TODO
+* `haskell`: TODO
