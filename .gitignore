@@ -33,6 +33,7 @@ build/
 ### VS ###
 .vs/
 dotnet/crud-restful/bin
+dotnet/crud-restful/obj
 dotnet/crud-restful/bin/**
 dotnet/crud-restful/obj/**
 
