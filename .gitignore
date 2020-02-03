@@ -32,8 +32,8 @@ build/
 
 ### VS ###
 .vs/
-dotnet/crud-restful/crud-restful/bin
-dotnet/crud-restful/crud-restful/obj
+dotnet/crud-restful/bin/**
+dotnet/crud-restful/obj/**
 
 ### VS Code ###
 .vscode/
