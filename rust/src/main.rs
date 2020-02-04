@@ -1,9 +1,12 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
-#[macro_use] extern crate rocket;
+#[macro_use]
+extern crate rocket;
+extern crate mysql;
 
-mod db_util;
-pub use db_util;
+// 引用db_util.rs文件模块
+pub mod db_util;
+use self::db_util::db_util::select_all;
 
 #[get("/helloworld")]
 fn helloworld() -> &'static str {
@@ -11,9 +14,8 @@ fn helloworld() -> &'static str {
 }
 
 #[get("/selectAll")]
-fn selectall() -> &'static str {
-    db_util::selectAll();
-    "Hello, world!"
+fn selectall() -> String {
+    select_all()
 }
 
 fn main() {

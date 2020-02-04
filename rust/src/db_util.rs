@@ -1,19 +1,16 @@
-#[macro_use]
-extern crate mysql;
-
-use mysql as my;
-
-use serde::{Serialize, Deserialize};
 
 pub mod db_util {
 
+    use mysql as my;
+    use serde::{Serialize, Deserialize};
+
     #[derive(Serialize, Deserialize, Debug, PartialEq, Eq)]
-    struct Helloworld {
+    pub struct Helloworld {
         id: i32,
         name: Option<String>,
     }
 
-    pub fn selectAll() {
+    pub fn select_all() -> String {
         let pool = my::Pool::new("mysql://root:root@localhost:3306/helloworld").unwrap();
 
         let selected_helloworld: Vec<Helloworld> =
@@ -32,6 +29,8 @@ pub mod db_util {
         let serialized = serde_json::to_string(&selected_helloworld).unwrap();
 
         println!("serialized = {}", serialized);
+
+        return serialized;
     }
 
 }
