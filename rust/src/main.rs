@@ -2,16 +2,20 @@
 
 #[macro_use] extern crate rocket;
 
+mod db_util;
+pub use db_util;
+
 #[get("/helloworld")]
 fn helloworld() -> &'static str {
     "welcome"
 }
 
 #[get("/selectAll")]
-fn selectAll() -> &'static str {
+fn selectall() -> &'static str {
+    db_util::selectAll();
     "Hello, world!"
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![helloworld, selectAll]).launch();
+    rocket::ignite().mount("/", routes![helloworld, selectall]).launch();
 }
