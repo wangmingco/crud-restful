@@ -7,3 +7,6 @@
 
 ## 启动服务
 1. `nginx -p \`pwd\`/ -c conf/nginx.conf`
+
+## PS
+运行前中要修改`lua/conf/nginx.conf`中的`lua_package_path`配置, 要修改成当前变量
