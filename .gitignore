@@ -55,8 +55,12 @@ cpp/cmake-build-debug
 ### php ###
 php/vendor
 
-
-
-
+### lua ###
+lua/client_body_temp
+lua/fastcgi_temp
+lua/logs
+lua/proxy_temp
+lua/scgi_temp
+lua/uwsgi_temp
 
 

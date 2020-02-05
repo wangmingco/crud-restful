@@ -9,6 +9,7 @@
 * `php`    : 采用`slim`和`medoo`框架实现
 * `rust`   : 采用`rocket`和`mysql`框架实现
 * `ruby`   : 采用`sinatra`和`mysql2`框架实现
+* `lua`    : 采用`openresty`框架实现
 * `scala`  : TODO
 * `clojure`: TODO
 * `erlang` : TODO
