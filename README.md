@@ -10,9 +10,8 @@
 * `rust`   : 采用`rocket`和`mysql`框架实现
 * `ruby`   : 采用`sinatra`和`mysql2`框架实现
 * `lua`    : 采用`openresty`框架实现
+* `erlang` : 采用`cowboy`框架实现
+* `haskell`: TODO
 * `scala`  : TODO
 * `clojure`: TODO
-* `erlang` : TODO
-* `elixir` : TODO
 * `cpp`    : TODO
-* `haskell`: TODO
