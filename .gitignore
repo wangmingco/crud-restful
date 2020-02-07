@@ -63,4 +63,25 @@ lua/proxy_temp
 lua/scgi_temp
 lua/uwsgi_temp
 
+### erlang ###
+erlang/deps
+erlang/.erlang.mk
+erlang/_rel
+erlang/ebin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
