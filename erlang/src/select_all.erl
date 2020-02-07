@@ -18,21 +18,23 @@ content_types_provided(Req, State) ->
 
 
 hello_to_html(Req, State) ->
-	%% Connect (ssl is optional)
-	% {ok, Pid} = mysql:start_link([{host, "localhost"}, 
-	% 							  {user, "root"},
-	% 							  {password, "hello"}, 
-	% 							  {database, "test"},
-	% 							  {ssl, [{server_name_indication, disable},
-	% 									{cacertfile, "/path/to/ca.pem"}]}
-	% 							  ]
-	% 							),
 
-	% %% Select
-	% {ok, ColumnNames, Rows} = mysql:query(Pid, <<"SELECT * FROM mytable WHERE id = ?">>, [1]),
-	% mysql:stop(Pid),
+	{ok, Pid} = mysql:start_link([{host, "localhost"}, 
+								  {user, "root"},
+								  {password, "root"}, 
+								  {database, "helloworld"}
+								  ]
+								),
+	
+	%% Select
+	{ok, ColumnNames, Rows} = mysql:query(Pid, <<"SELECT * FROM helloworld">>),
 
-	Body = <<"welcome text/html">>,
+	io:format("ColumnNames: ~p~n", [ColumnNames]),
+	io:format("Rows: ~p~n", [Rows]),
+	
+	mysql:stop(Pid),
+
+	Body = <<"处理完成">>,
 	{Body, Req, State}.
 
 hello_to_json(Req, State) ->

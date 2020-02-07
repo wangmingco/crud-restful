@@ -13,7 +13,7 @@ start(_Type, _Args) ->
 			{"/selectAll", select_all, []}
 		]}
 	]),
-	{ok, _} = cowboy:start_clear(http, [{port, 8092}], #{
+	{ok, _} = cowboy:start_clear(http, [{port, 8091}], #{
 		env => #{dispatch => Dispatch}
 	}),
 	erlang_sup:start_link().
